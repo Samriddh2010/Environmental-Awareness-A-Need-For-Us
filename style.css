@@ -1,0 +1,194 @@
+body {
+    
+        
+    background-image: url("waterfall.jpg");
+    border:solid 7px #3ee02f ;
+    background-size: cover; 
+   background-repeat: no-repeat;
+   font-size:25px;
+   color:rgb(10, 242, 250);
+   text-align:left;
+   font-weight: bold;   
+
+
+    /* transform: scale(1.5); */
+  }
+  /* button */
+  .btn {
+    margin:40px;
+    padding: 10px 18px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+  }
+  .btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  /* glow */
+  .btn::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FFFB00, #71e444,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  /* hover */
+  .btn:hover::before {
+    opacity: 1;
+  }
+  .btn:active:after {
+    background: transparent;
+  }
+  .btn:active {
+    color: #000;
+    font-weight: bold;
+  }
+  .HEADING{font-size:50px;
+    text-decoration:underline;
+    text-align:center;
+    background-color: orange;
+    color: black
+}
+H2{
+font-size:50px;
+text-align:center;
+color: purple
+}
+#FRAGILITY{
+color:rgb( 250, 200, 10);
+FONT-SIZE:35PX;
+FONT-WEIGHT:BOLD}
+#CARBON {color:rgb( 250, 200, 10);
+  font-size:35px;
+}
+#REASONS{font-size:40px;
+text-align:center;
+color: blue;
+}
+#CON{color:rgb(169, 238, 245);
+text-align:left;
+padding-bottom: 35px;
+font-size:35px;
+}
+
+    
+    .navbar{height:150px;
+    background-color:#333;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border:solid 1px transparent;
+    }
+    #nature{
+        font-weight:bold;
+        color:aquamarine;
+        font-size:50px;
+        font-family:gill sans;
+        padding:14px 20px;
+        text-decoration:none;
+        }
+        a{
+            text-decoration:none;
+            position:relative;
+            font-size:30px;
+            letter-spacing:0.5px;
+            color:white;
+            font-family:arial;
+            padding:0 10px;
+            font-weight:bold;
+            text-align:center;
+            
+
+
+}
+.container{
+  width:90%;
+  padding:20px;
+  margin:100px auto;
+display:flex;
+flex-direction:row;
+
+  justify-content:space-evenly;
+} 
+.box{
+  width:250px;
+  margin-left:-40px;
+  box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+  transition:0.5s;
+
+}
+.box img{
+
+  width:100%;
+  border-radius: 5px;
+  border:solid 2px #000;
+}
+.box:hover{
+  transform: scale(1.4);
+  z-index: 2;
+}
+#Pollution{
+  width:152px;
+  padding-right: 0px;
+}
+h3{
+  font-size: 24px;
+  text-align:left;
+  color:rgb(110, 219, 295);
+}
+
+.act{
+  background-color: #7c090985;
+  list-style: disc;
+text-align:left;
+margin-right: 150px;
+}
+.env{
+  display:block;
+  widh:140px;
+  padding-top:0px;
+  height:30%;
+margin-right:30px;
+  border: solid 4px white;
+ float:right;
+}
+.cause {
+  background-color:  #7c090985;;
+  font-size:25px;
+  color:rgb(10, 242, 250);
+  text-align:left;
+  font-weight: bold;
+}
+#Pollution{
+margin-right:-90px;
+}
